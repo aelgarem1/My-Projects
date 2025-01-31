@@ -108,7 +108,7 @@ elif tab == "Model Comparison":
     st.text("classification Report for Random Forest Model")
     st.dataframe(report_df)
     
-    report_dict2 = classification_report(y_test, y_pred_log)
+    report_dict2 = classification_report(y_test, y_pred_log, output_dict = True)
     report_df2 =  pd.DataFrame(report_dict2).transpose()
     st.subheader("Classification Report for Logistic Regression Model")
     st.dataframe(report_df2)
