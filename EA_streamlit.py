@@ -80,7 +80,7 @@ elif tab == "Model Comparison":
     acc_rf = accuracy_score(y_test, y_pred_rf)
 
     # Train Logistic Regression Model
-    log_model = LogisticRegression(class_weight='balanced', max_iter=1000, random_state=42, c=10)
+    log_model = LogisticRegression(class_weight='balanced', max_iter=1000, random_state=42, C=10)
     log_model.fit(X_train, y_train)
     y_pred_log = log_model.predict(X_test)
     acc_log = accuracy_score(y_test, y_pred_log)
