@@ -139,8 +139,8 @@ elif choice == "Model Comparison":
     st.header("Model Performance")
     model_results = pd.DataFrame({
         'Model': ['XGBoost', 'Random Forest', 'Logistic Regression', 'KNN', 'Gaussian NB'],
-        'F1-Score': [0.32, 0.32, 0.29, 0.14, 0.00],
-        'Recall': [0.80, 0.66, 0.50, 0.11, 0.00]
+        'F1-Score': [0.31, 0.31, 0.30, 0.14, 0.00],
+        'Recall': [0.65, 0.65, 0.56, 0.11, 0.00]
     })
     st.table(model_results)
 
